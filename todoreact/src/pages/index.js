@@ -1,16 +1,10 @@
-import { Layout } from "@/components/Layout";
+import Todo from "@/components/Todo";
 
 export default function Home() {
   return (
-    <div
-      style={{
-        backgroundImage: "url(/back.jpeg)",
-        backgroundSize: "cover",
-        height: "100vh",
-      }}
-      className="m-auto px-[50px] py-[100px]"
-    >
-      <Layout />
-    </div>
+    <main className="container mx-auto p-4">
+      <h1 className="text-3xl font-bold mb-8 text-gray-100">Todo Board</h1>
+      <Todo />
+    </main>
   );
 }

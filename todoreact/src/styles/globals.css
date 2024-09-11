@@ -1,10 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-body {
-  background-image: url("/todoreact/public/back.jpeg");
-  background-repeat: no-repeat;
-  background-size: fill;
-  background-position: center;
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+  body {
+    background-color: #183d3d;
+  }
 }
