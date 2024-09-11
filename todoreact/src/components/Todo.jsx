@@ -35,7 +35,6 @@ export default function Todo() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
-    // Load columns from sessionStorage on client-side
     const storedColumns = sessionStorage.getItem("columns");
     if (storedColumns) {
       setColumns(JSON.parse(storedColumns));
@@ -44,7 +43,6 @@ export default function Todo() {
   }, []);
 
   useEffect(() => {
-    // Save columns to sessionStorage on client-side
     if (isLoaded) {
       sessionStorage.setItem("columns", JSON.stringify(columns));
     }
